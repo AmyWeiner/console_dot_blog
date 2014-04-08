@@ -1,0 +1,23 @@
+{% include header.html %}
+
+  <div class="row-fluid">
+    <div class="span9 post">
+      <div class="post-title">
+        &gt; {{ page.title }};
+      </div>
+       <p class="muted">&gt; {{ page.date | date_to_long_string }};</p>
+        <div class="post-text">
+          <p>{</p>
+          <blockquote>
+             {{ content }}
+          </blockquote>
+          
+           <p>}</p>
+        </div>
+    </div>
+    <div class="span3">
+        {% include sidebar.html %}
+    </div>
+</div>
+
+  {% include footer.html %}
