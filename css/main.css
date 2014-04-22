@@ -52,6 +52,10 @@ a:visited { color: #a0a; }
   font-size: 80%;
 }
 
+.post-trunc {
+  margin-left: 20px;
+}
+
 /*****************************************************************************/
 /*
 /* About Me
@@ -147,6 +151,10 @@ a:visited { color: #a0a; }
 
 .footer .rss img {
   border: 0;
+}
+
+.sidebar {
+  margin-left: 50px;
 }
 
 .sidebar ul {
