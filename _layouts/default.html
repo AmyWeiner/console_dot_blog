@@ -5,8 +5,26 @@
         {{ content }}
     </div>
     <div class="span3">
-        {% include sidebar.html %}
+        <div class="sidebar">
+       <img class="img-responsive" src="../img/amy_crop.jpg">
+
+        <h3>About</h3>
+        <p>My musings on web development and software engineering</p>
+        <h3>Social</h3>
+        <ul>
+          <li><a href="http://github.com/AmyWeiner" target="_blank">Github;</a></li>
+          <li><a href="https://www.linkedin.com/in/amyrweiner" target="_blank">Linkedin;</a></li>
+          <li><a href="https://twitter.com/amyrweiner" target="_blank">Twitter;</a></li>
+        </ul>
+
+      <h3>Recent Posts</h3>
+      <ul>
+        {% for post in site.posts limit: 5 %}
+          <li><a href="{{ post.url }}">{{ post.title }};</a></li>
+        {% endfor %}
+      </ul>
     </div>
+  </div>
 </div>
 
   {% include footer.html %}
